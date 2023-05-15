@@ -1,7 +1,14 @@
 import Muka from "../assets/Muka.jpeg";
 import "../App.css";
 
-const { Box, Text, Flex, Container, Image } = require("@chakra-ui/react");
+const {
+  Box,
+  Text,
+  Flex,
+  Container,
+  Image,
+  VStack,
+} = require("@chakra-ui/react");
 
 const Description = () => {
   return (
@@ -12,17 +19,35 @@ const Description = () => {
           py={{ lg: "32", base: "14" }}
         >
           <Flex color="white" direction="row" justifyContent="start">
-            <Text
-              maxWidth={{ base: "410px", md: "756px" }}
-              textTransform="uppercase"
-              fontSize={{ lg: "4xl", base: "2xl" }}
-              fontWeight="bold"
-              lineHeight="1.25"
-              mt="20px"
-            >
-              Sedia berbagai macam baju adat, profesi, tari, dan wisuda dengan
-              berbagai ukuran.
-            </Text>
+            <VStack textAlign={"center"}>
+              <Text
+                maxWidth={{ base: "410px", md: "756px" }}
+                textTransform="uppercase"
+                fontSize={{ sm: "sm", md: "md", lg: "xl", xl: "4xl" }}
+                fontWeight="bold"
+                lineHeight="1.25"
+                mt="20px"
+                paddingRight={{ sm: "5px", md: "10px", lg: "15px", xl: "20px" }}
+              >
+                Sedia berbagai macam baju adat, profesi, tari, dan wisuda dengan
+                berbagai ukuran.
+              </Text>
+              <Text
+                maxWidth={{ base: "410px", md: "756px" }}
+                textTransform="uppercase"
+                fontSize={{ sm: "sm", md: "md", lg: "lg", xl: "xl" }}
+                fontWeight="normal"
+                lineHeight="1.25"
+                mt="20px"
+                color="red"
+                paddingRight={{ sm: "5px", md: "10px", lg: "15px", xl: "20px" }}
+              >
+                Hati hati atas pengatas namaan nomor whatsapp lain. Website ini
+                resmi dan nomor kami hanya satu satunya di <b>082173448988</b>. SELALU
+                CHAT dulu untuk ketersediaan sebelum datang ke toko.
+              </Text>
+            </VStack>
+
             <Image
               src={Muka}
               alt="Owner"

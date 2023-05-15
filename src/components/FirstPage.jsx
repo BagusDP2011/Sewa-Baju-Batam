@@ -6,39 +6,28 @@ const FirstPage = () => {
   return (
     <div id="mainpage">
       <Box
-        height={{ lg: "80vh", base: "55vh" }}
+        height={{ lg: "80vh", md: "55vh" }}
         position="relative"
         display="flex"
-        paddingX={{ lg: "64px", base: "16px" }}
+        paddingX={{ lg: "64px", md: "16px" }}
       >
         {/* <Box  /> */}
-        <HStack alignSelf={"left"} spacing={{ base: 3, lg: 4 }}>
+        <HStack alignSelf={"left"} spacing={{ sm: 2, md: 3, lg: 4 }}>
           <Image
             src={bg}
             layout="fill"
-            alt="coffee"
+            alt="toko"
             objectFit="cover"
-            width="50%"
+            width={{ sm: "25%", md: '30%', lg: "50%" }}
             height="60%"
           />
 
-          {/* <Box
-        position="absolute"
-        width="100%"
-        height="100%"
-        backgroundColor="black"
-        opacity={0.3}
-        top={0}
-        right={0}
-        bottom={0}
-        left={0}
-      /> */}
-          <Stack alignSelf="center" spacing={{ base: 3, lg: 4 }}>
+          <Stack alignSelf="center" spacing={{ sm: 2, md: 3, lg: 4 }}>
             <Text
               position="relative"
               color="black"
-              fontSize={{ lg: "2xl", base: "xl" }}
-              lineHeight={{ base: "1" }}
+              fontSize={{ sm: 'l', lg: "2xl", md: "xl" }}
+              lineHeight={{ md: "1" }}
               fontFamily="Inter"
               fontWeight="bold"
             >
@@ -47,8 +36,8 @@ const FirstPage = () => {
             <Text
               position="relative"
               color="black"
-              fontSize={{ lg: "8xl", base: "6xl" }}
-              lineHeight={{ base: "1" }}
+              fontSize={{ lg: "8xl", md: "6xl" }}
+              lineHeight={{ md: "1" }}
               fontFamily="Inter"
               fontWeight="bold"
             >
@@ -57,7 +46,7 @@ const FirstPage = () => {
             <Text
               position="relative"
               color="black"
-              fontSize={{ lg: "lg", base: "sm" }}
+              fontSize={{ lg: "lg", md: "sm" }}
               fontFamily="Inter"
               fontWeight="medium"
             >

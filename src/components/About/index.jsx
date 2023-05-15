@@ -2,6 +2,22 @@ import { Box, Container, Grid, GridItem, Stack, Text } from "@chakra-ui/react";
 import "../../App.css";
 
 const About = () => {
+  const borderStyleGmap = {
+    width: "100%",
+    maxWidth: "600px",
+  };
+  const borderStyleDivGmap = {
+    position: "relative",
+    paddingBottom: "75%",
+    height: "0",
+  };
+  const styleGmap = {
+    position: "absolute",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100%",
+  };
   return (
     <div id="about">
       <Box backgroundColor="gray.400">
@@ -63,17 +79,20 @@ const About = () => {
               <Box paddingLeft={"50px"}>
                 <div class="mapouter">
                   <div class="gmap_canvas">
-                    <iframe
-                      title="googlemap"
-                      width="600"
-                      height="450"
-                      id="gmap_canvas"
-                      src="https://maps.google.com/maps?q=arrahman%20collection&t=k&z=15&ie=UTF8&iwloc=&output=embed"
-                      frameBorder="0"
-                      scrolling="no"
-                      marginHeight="0"
-                      marginWidth="0"
-                    ></iframe>
+                    <div style={borderStyleGmap}>
+                      <div style={borderStyleDivGmap}>
+                        <iframe
+                          title="googlemap"
+                          // src="https://maps.google.com/maps?q=arrahman%20collection&t=k&z=15&ie=UTF8&iwloc=&output=embed" // Old
+                          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14855.43086618431!2d103.978212!3d1.048197!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98dbc2aaa8b3d%3A0xef0e8ff8bb406a9c!2sAr%20Rahman%20Collection%20Sewa%20Baju!5e1!3m2!1sen!2sus!4v1684129644414!5m2!1sen!2sus"
+                          style={styleGmap}
+                          frameborder="0"
+                          scrolling="no"
+                          marginheight="0"
+                          marginwidth="0"
+                        ></iframe>
+                      </div>
+                    </div>
                     <br />
                   </div>
                 </div>

@@ -46,7 +46,6 @@ const Collection = () => {
   };
 
 
-  // Example items, to simulate fetching from another resources.
   const items = [
     photo1,
     photo2,
@@ -102,7 +101,7 @@ const Collection = () => {
     const endOffset = itemOffset + itemsPerPage;
     setCurrentItems(items.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(items.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage]);
+  }, [pageCount, itemOffset, itemsPerPage]);
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
@@ -200,9 +199,9 @@ const Collection = () => {
           Contoh koleksi kami
         </Text>
         <Grid
-          gridTemplateColumns={{ lg: "repeat(3, 1fr)", base: "repeat(3, 1fr)" }}
+          gridTemplateColumns={{ sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)", lg: "repeat(3, 1fr)" }}
           rowGap="4"
-          columnGap="5"
+          columnGap={{ sm: "0", md: "2", lg: "5" }}
           width="100%"
           maxWidth="100%"
           justifyItems={"center"}
