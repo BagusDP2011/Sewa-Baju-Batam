@@ -19,7 +19,7 @@ function App() {
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
       />
       <a
-        href="https://api.whatsapp.com/send?phone=6281278732817&text=Saya tertarik dan ingin bertanya"
+        href="https://api.whatsapp.com/send?phone=6282173448988&text=Saya dari websitenya merasa tertarik dan ingin bertanya"
         class="float"
         target="_blank"
         rel="noopener noreferrer"

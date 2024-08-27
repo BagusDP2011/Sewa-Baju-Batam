@@ -29,7 +29,7 @@ const Header = () => {
         <a href="#mainpage">Home</a>
         <a href="#collection">Collection</a>
         <a href="#about">About</a>
-        <a href="https://api.whatsapp.com/send?phone=6281278732817&text=Saya tertarik dan ingin bertanya">Order</a>
+        <a href="https://api.whatsapp.com/send?phone=6282173448988&text=Saya dari website merasa tertarik dan ingin bertanya">Order</a>
       </HStack>
     </Flex>
   );
